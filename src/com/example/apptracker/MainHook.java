@@ -15,6 +15,9 @@ public class MainHook implements IXposedHookLoadPackage {
 		
 		HttpHook httpHook = new HttpHook();
 		httpHook.startHook(lpparam);
+		
+		HideHook hideHook = new HideHook();
+		hideHook.hide(lpparam);
 	}
 
 }
